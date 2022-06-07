@@ -231,7 +231,9 @@ ul, li {
 
   .star-list {
       li {
-    display: inline-block;
-    margin-left: -25px;
+        display: inline-block;
+        & + li {
+            margin-left: -25px;
+        }
     }
   }

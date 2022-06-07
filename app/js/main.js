@@ -29,7 +29,7 @@ $(function(){
         focusOnSelect: true
     });
 
-    $('.holder__slider').slick({
+    $('.holder__slider, .shop__slider').slick({
         infinite: true,
         fade: true,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg" alt=""></img>',
@@ -76,4 +76,8 @@ $(function(){
 
     let summ = ($('.guests').val() * $('.summ').data('nights')) * $('.nights').val();
     $('.summ').html('$' + summ.toFixed(1));
+
+    $('.surfboard-box__circle').on('click', function() {
+      $(this).toggleClass('active')
+    });
 });
