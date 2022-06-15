@@ -18,6 +18,8 @@ body {
     background-color: #171919;
     color: #fff;
     text-transform: uppercase;
+    min-width: 320px;
+    overflow-x: hidden;
 }
 
 a {
@@ -76,13 +78,16 @@ ul, li {
 }
 
 .title {
-    span {
+    div {
       font-size: 200px;
       color: rgba(#fff, 0.2);
       font-weight: 800;
       position: relative;
       transform: translateX(-50px);
       display: inline-block;
+    }
+    span {
+        display: inline-block;
     }
     h3 {
         margin: 0;
